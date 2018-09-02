@@ -8,6 +8,7 @@ import Footer from '../components/footer'
 
 import './bootstrap.min.css'
 import './style.css'
+import favicon from '../images/favicon.png'
 
 const Layout = ({ children, data }) => (
 	<div>
@@ -16,6 +17,9 @@ const Layout = ({ children, data }) => (
 			meta={[
 				{ name: 'description', content: 'Here you will see some personal musings along with great development information, techniques, and tips as Christian Helvin learns them in real-life development scenarios himself.' },
 				{ name: 'keywords', content: 'christian helvin, php developer, christian patrick helvin, gatsby website, personal blog' },
+			]}
+			link={[
+				{ rel: 'shortcut icon', type: 'image/png', href: `${favicon}` }
 			]}
 		>	
 			<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" async crossorigin="anonymous"></script>
