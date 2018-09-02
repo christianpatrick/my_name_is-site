@@ -17,15 +17,42 @@ module.exports = {
 			resolve: `gatsby-plugin-google-analytics`,
 			options: {
 				trackingId: "UA-87339836-6",
-				// Puts tracking script in the head instead of the body
-				head: false,
-				// Setting this parameter is optional
+				head: true,
 				anonymize: true,
-				// Setting this parameter is also optional
 				respectDNT: true,
-				// Avoids sending pageview hits from custom paths
 				exclude: [],
 			},
 		},
+		{
+			resolve: `gatsby-plugin-favicon`,
+			options: {
+				logo: "./src/images/favicon.jpg",
+				appName: 'My Name is Christian',
+				appDescription: 'Here you will see some personal musings along with great development information, techniques, and tips as Christian Helvin learns them in real-life development scenarios himself.',
+				developerName: 'Christian Helvin',
+				developerURL: 'https://mynameischristian.com',
+				dir: 'auto',
+				lang: 'en-US',
+				background: '#fff',
+				theme_color: '#fff',
+				display: 'standalone',
+				orientation: 'any',
+				start_url: '/?homescreen=1',
+				version: '1.0',
+
+				icons: {
+					android: true,
+					appleIcon: true,
+					appleStartup: true,
+					coast: false,
+					favicons: true,
+					firefox: true,
+					opengraph: false,
+					twitter: false,
+					yandex: false,
+					windows: false
+				}
+			}
+		}
 	],
 }
