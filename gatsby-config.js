@@ -7,7 +7,7 @@ module.exports = {
 		'gatsby-plugin-react-helmet',
 		'gatsby-transformer-remark',
 		{
-			resolve: 'gatsby-source-filesystem',
+			resolve: `gatsby-source-filesystem`,
 			options: {
 				name: 'posts',
 				path: `${__dirname}/src/posts`
@@ -17,13 +17,9 @@ module.exports = {
 			resolve: `gatsby-plugin-google-analytics`,
 			options: {
 				trackingId: "UA-87339836-6",
-				// Puts tracking script in the head instead of the body
-				head: false,
-				// Setting this parameter is optional
+				head: true,
 				anonymize: true,
-				// Setting this parameter is also optional
 				respectDNT: true,
-				// Avoids sending pageview hits from custom paths
 				exclude: [],
 			},
 		},
