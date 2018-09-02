@@ -9,8 +9,8 @@ export default function Template({
 	const { frontmatter, html } = markdownRemark;
 
 	//load all scripts
-	const scripts = frontmatter.scripts.map((script) =>
-		<script src={script} async defer></script>
+	const scripts = frontmatter.scripts.map((script, i) =>
+		<script key={i} src={script} defer></script>
 	);
 
 	//load comment module
@@ -23,7 +23,9 @@ export default function Template({
 
 	return (
 		<div className="article">
-			<Helmet>
+			<Helmet
+				title={frontmatter.title+' | '+data.site.siteMetadata.title}
+			>
 				{scripts}
 			</Helmet>
 			<h1 className="title">{frontmatter.title}</h1>
@@ -51,6 +53,7 @@ export const pageQuery = graphql`
 		},
 		site {
 			siteMetadata {
+				title
 				siteUrl
 			}
 		}
