@@ -16,7 +16,7 @@ export default function Template({
 	//load comment module
 	const disqusShortname = 'christianpatrick';
 	const disqusConfig = {
-		url: data.site.siteMetadata.url+frontmatter.path,
+		url: data.site.siteMetadata.siteUrl+frontmatter.path,
 		identifier: frontmatter.path,
 		title: frontmatter.title
 	};
@@ -51,7 +51,7 @@ export const pageQuery = graphql`
 		},
 		site {
 			siteMetadata {
-				url
+				siteUrl
 			}
 		}
 	}

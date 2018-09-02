@@ -1,7 +1,7 @@
 module.exports = {
 	siteMetadata: {
 		title: "👋 Hi, My Name is Christian!",
-		url: "https://mynameischristian.com"
+		siteUrl: "https://mynameischristian.com"
 	},
 	plugins: [
 		'gatsby-plugin-react-helmet',
@@ -23,5 +23,28 @@ module.exports = {
 				exclude: [],
 			},
 		},
+		{
+			resolve: `gatsby-plugin-sitemap`,
+			options: {
+				output: `/sitemap.xml`,
+				exclude: [],
+				query: `
+				{
+					site {
+						siteMetadata {
+							siteUrl
+						}
+					}
+
+					allSitePage {
+						edges {
+							node {
+								path
+							}
+						}
+					}
+				}`
+			}
+		}
 	],
 }
