@@ -25,6 +25,9 @@ export default function Template({
 		<div className="article">
 			<Helmet
 				title={frontmatter.title+' | '+data.site.siteMetadata.title}
+				meta={[
+				{ name: 'description', content: html.substring(0, 290).replace(/<[^>]*>/g, '')+'...' }
+				]}
 			>
 				{scripts}
 			</Helmet>
