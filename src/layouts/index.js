@@ -17,6 +17,7 @@ const Layout = ({ children, data }) => (
 			meta={[
 				{ name: 'description', content: 'Here you will see some personal musings along with great development information, techniques, and tips as Christian Helvin learns them in real-life development scenarios himself.' },
 				{ name: 'keywords', content: 'christian helvin, php developer, christian patrick helvin, gatsby website, personal blog' },
+				{ name: 'google-site-verification', content: 'Xq0R-4naHcH4nujuM1FFUuyByFPN85mR4u0p6itmDOM' },
 			]}
 			link={[
 				{ rel: 'shortcut icon', type: 'image/png', href: `${favicon}` }
