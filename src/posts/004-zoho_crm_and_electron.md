@@ -3,7 +3,6 @@ path: "/zoho-crm-and-electron"
 date: "2018-02-19"
 title: "Zoho CRM and Electron"
 tags: ["electron app", "nativefier", "zoho crm"]
-scripts: ["https://gumroad.com/js/gumroad-embed.js"]
 ---
 
 Recently my team has switched to Zoho for everything relating to our clients. Before using Zoho, we had a culmination of services that didn’t really talk together and finding info on a client in one place was ’near’ impossible. (Unless we wanted to spend an eternity connecting countless API's)
@@ -14,8 +13,6 @@ Here’s my hang up with it though. I hate browser apps! Not completely, but whe
 
 So without further ado, here‘s my [Zoho CRM Electron app](https://github.com/christianpatrick/electron-zoho_crm).
 
-<div class="gumroad-product-embed" data-gumroad-product-id="nrAS">
-	<a href="https://gumroad.com/l/nrAS">Loading...</a>
-</div>
+[![Image of Zoho CRM Electron App](https://raw.githubusercontent.com/christianpatrick/electron-zoho_crm/master/screenshot.png)](https://gumroad.com/l/nrAS)
 
 If you have any ideas or issues with it, [I’d love to know](https://github.com/christianpatrick/electron-zoho_crm/issues)!

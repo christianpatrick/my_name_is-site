@@ -8,11 +8,6 @@ export default function Template({
 	const { markdownRemark } = data; // data.markdownRemark holds our post data
 	const { frontmatter, html } = markdownRemark;
 
-	//load all scripts
-	const scripts = frontmatter.scripts.map((script, i) =>
-		<script key={i} src={script} defer></script>
-	);
-
 	//load comment module
 	const disqusShortname = 'christianpatrick';
 	const disqusConfig = {
@@ -28,9 +23,7 @@ export default function Template({
 				meta={[
 				{ name: 'description', content: html.substring(0, 290).replace(/<[^>]*>/g, '')+'...' }
 				]}
-			>
-				{scripts}
-			</Helmet>
+			/>
 			<h1 className="title">{frontmatter.title}</h1>
 			<p className="created">{frontmatter.date}</p>
 			<div
@@ -51,7 +44,6 @@ export const pageQuery = graphql`
 				path
 				title
 				tags
-				scripts
 			}
 		},
 		site {

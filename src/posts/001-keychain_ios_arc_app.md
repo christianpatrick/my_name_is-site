@@ -3,7 +3,6 @@ path: "/integrating-the-keychain-with-an-ios-arc-app-in-xcode"
 date: "2017-01-14"
 title: "Integrating the Keychain with an iOS ARC App in Xcode"
 tags: ["keychain", "ios arc app", "javascript save credentials"]
-scripts: []
 ---
 
 For a recent iOS app I was working on, there was a need to integrate the Keychain to save the login credentials locally.

@@ -3,7 +3,6 @@ path: "/stranger-things"
 date: "2017-01-19"
 title: "Stranger Things"
 tags: ["music cover", "stranger things"]
-scripts: []
 ---
 
 I haven't been playing keys much at all recently or crafting new sounds.

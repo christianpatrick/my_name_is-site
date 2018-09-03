@@ -3,7 +3,6 @@ path: "/airmail-polymail-spark-one-day"
 date: "2017-04-20"
 title: "Airmail to Polymail to Spark in a Day"
 tags: ["email client", "airmail", "polymail app", "spark mail"]
-scripts: []
 ---
 
 I love email. I love email to the point that I've actually had much experience through the years running fully-featured mail servers - though I quickly found that's not for me.
