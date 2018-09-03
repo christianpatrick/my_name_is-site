@@ -6,9 +6,19 @@ import Header from '../components/header'
 import Sidebar from '../components/sidebar'
 import Footer from '../components/footer'
 
+//load in css files
 import './bootstrap.min.css'
 import './style.css'
-import favicon from '../images/favicon.png'
+
+import favicon from '../media/favicon.png'
+
+//load in js libs
+try {
+	window.jQuery = window.$ = require('jquery/dist/jquery.min.js')
+	require('bootstrap/dist/js/bootstrap.min.js')
+} catch (e) {
+	console.log(e)
+}
 
 const Layout = ({ children, data }) => (
 	<div>
@@ -22,15 +32,13 @@ const Layout = ({ children, data }) => (
 			link={[
 				{ rel: 'shortcut icon', type: 'image/png', href: `${favicon}` }
 			]}
-		>	
-			<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" async crossorigin="anonymous"></script>
-			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-		</Helmet>
+		/>
+		<a href="#content" className="sr-only sr-only-focusable">Skip to main content</a>
 
 		<Header siteTitle={data.site.siteMetadata.title} />
 
 		<div id="contentcontainer">
-			<div className="container">
+			<div className="container" id="content" tabindex="-1">
 				<div className="row">
 
 					<main id="content" className="col-md-9 col-sm-8 pull-left">
@@ -43,8 +51,7 @@ const Layout = ({ children, data }) => (
 			</div>
 		</div>
 
-		<Footer />
-		
+		<Footer />		
 	</div>
 )
 

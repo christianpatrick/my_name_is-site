@@ -10,4 +10,7 @@ I haven't been playing keys much at all recently or crafting new sounds.
 
 But for a new podcast I am starting, it was asked of me to do a sound similar to Stranger Things (Possibly one of the best shows I have ever watched)!  So here's what I came up with in Mainstage:
 
-<audio controls="controls"><source src="https://www.mynameischristian.com/images/strangerthingscoverintro.mp3" type="audio/mpeg"/></audio>
+<audio controls class="center-block">
+	<source type="audio/mp3" src="media/002-stranger_things-intro.mp3"></source>
+	<p>Your browser does not support this media player.</p>
+</audio>

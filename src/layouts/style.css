@@ -3,7 +3,7 @@
 
 body {
 	background-color: #FFFFFF;
-	background-image: url('../images/bg.png');
+	background-image: url('../media/bg.png');
 	background-position: center top;
 	background-repeat: repeat-x;
 	font-family: 'Droid Sans', sans-serif;
@@ -93,6 +93,10 @@ h1,
 
 #content .well img {
 	padding: 10px;
+}
+
+.article-content {
+	margin-bottom: 30px;
 }
 
 #right {

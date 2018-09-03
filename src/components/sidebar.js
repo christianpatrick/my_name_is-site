@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
 
-import headshot from '../images/christianhelvin.jpg'
+import headshot from '../media/christianhelvin.jpg'
 
 const Sidebar = () => (
 	<div>
