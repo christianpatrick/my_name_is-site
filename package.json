@@ -12,6 +12,7 @@
     "gatsby-plugin-react-helmet": "^2.0.11",
     "gatsby-plugin-sitemap": "^1.2.25",
     "gatsby-remark-copy-linked-files": "^1.5.37",
+    "gatsby-remark-external-links": "0.0.4",
     "gatsby-source-filesystem": "^1.5.39",
     "gatsby-transformer-remark": "^1.7.44",
     "jquery": "^3.3.1",
