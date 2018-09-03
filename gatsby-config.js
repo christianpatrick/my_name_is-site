@@ -5,7 +5,19 @@ module.exports = {
 	},
 	plugins: [
 		'gatsby-plugin-react-helmet',
-		'gatsby-transformer-remark',
+		{
+			resolve: `gatsby-transformer-remark`,
+			options: {
+				plugins: [
+					{
+						resolve: `gatsby-remark-copy-linked-files`,
+						options: {
+							ignoreFileExtensions: [],
+						},
+					},
+				],
+			},
+		},
 		{
 			resolve: `gatsby-source-filesystem`,
 			options: {
