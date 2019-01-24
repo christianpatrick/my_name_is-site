@@ -5,7 +5,7 @@ import { OutboundLink } from 'gatsby-plugin-google-analytics'
 const AboutPage = () => (
 	<div>
 		<h1>About Me</h1>
-		<p>I code, play music, love my wife and run a creative agency: <OutboundLink href="https://www.ignitehere.com" target="_blank">Ignite</OutboundLink>.</p>
+		<p>I code, play music, and love my wife.</p>
 	</div>
 )
 
