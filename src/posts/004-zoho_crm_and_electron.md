@@ -13,6 +13,6 @@ Here’s my hang up with it though. I hate browser apps! Not completely, but whe
 
 So without further ado, here‘s my [Zoho CRM Electron app](https://github.com/christianpatrick/electron-zoho_crm).
 
-[![Image of Zoho CRM Electron App](https://raw.githubusercontent.com/christianpatrick/electron-zoho_crm/master/screenshot.png)](https://gumroad.com/l/nrAS)
+[![Image of Zoho CRM Electron App](https://raw.githubusercontent.com/christianpatrick/electron-zoho_crm/master/screenshot.png)](https://github.com/christianpatrick/electron-zoho_crm)
 
 If you have any ideas or issues with it, [I’d love to know](https://github.com/christianpatrick/electron-zoho_crm/issues)!
