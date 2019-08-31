@@ -4,7 +4,6 @@
   "version": "1.0.0",
   "author": "Christian Helvin <hi@mynameischristian.com>",
   "dependencies": {
-    "bootstrap": "^4.3.1",
     "disqus-react": "^1.0.5",
     "gatsby": "^2.13.82",
     "gatsby-link": "^2.2.9",
@@ -18,7 +17,8 @@
     "jquery": "^3.3.1",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
-    "react-helmet": "^5.2.0"
+    "react-helmet": "^5.2.0",
+    "semantic-ui-react": "^0.88.0"
   },
   "keywords": [
     "gatsby",
