@@ -1,13 +1,14 @@
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 import { Helmet } from 'react-helmet'
-import Container from 'react-bootstrap/Container'
+import { Container, Grid } from 'semantic-ui-react'
 
 import Header from '../components/header'
 import Sidebar from '../components/sidebar'
 import Footer from '../components/footer'
 
 //load in css files
+import 'semantic-ui-css/semantic.min.css'
 import '../css/style.css'
 
 import favicon from '../media/favicon.png'
@@ -36,20 +37,20 @@ export default ({ children }) => (
 						{ rel: 'shortcut icon', type: 'image/png', href: `${favicon}` }
 						]}
 						/>
-				<a href="#content" className="sr-only sr-only-focusable">Skip to main content</a>
+				<a href="#content" className="skip-main">Skip to main content</a>
 
 				<Header siteTitle={data.site.siteMetadata.title} />
 
-				<div id="contentcontainer">
-					<Container>
-						<div className="row">
-							<main id="content" className="col-md-9 col-sm-8 pull-left">
-								{children}
-							</main>
+				<Container id="content">
+					<Grid centered relaxed stackable>
+						<Grid.Column width={10}>
+							{children}
+						</Grid.Column>
+						<Grid.Column width={4}>
 							<Sidebar />
-						</div>
-					</Container>
-				</div>
+						</Grid.Column>
+					</Grid>
+				</Container>
 
 				<Footer />
 			</>

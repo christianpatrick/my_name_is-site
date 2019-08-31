@@ -1,5 +1,6 @@
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
+import { List } from 'semantic-ui-react'
 
 import Layout from '../components/layout'
 import BlogLink from '../components/blog-link'
@@ -25,12 +26,14 @@ export default ({ data }) => (
 		`}
 		render={data => (
 			<Layout>
-				{data.graph.edges.map(({ node }) => (
-					<BlogLink 
-						key={node.id}
-						post={node}
-					/>
-				))}
+				<List relaxed>
+					{data.graph.edges.map(({ node }) => (
+						<BlogLink 
+							key={node.id}
+							post={node}
+						/>
+					))}
+				</List>
 			</Layout>
 		)}
 	/>

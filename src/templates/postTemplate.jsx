@@ -21,21 +21,19 @@ export default function Template({
 
 	return (
 		<Layout>
-			<div className="article">
-				<Helmet
-					title={frontmatter.title+' | '+data.site.siteMetadata.title}
-					meta={[
-					{ name: 'description', content: html.substring(0, 290).replace(/<[^>]*>/g, '')+'...' }
-					]}
-				/>
-				<h1 className="title">{frontmatter.title}</h1>
-				<p className="created">{frontmatter.date}</p>
-				<div
-					className="article-content"
-					dangerouslySetInnerHTML={{ __html: html }}
-				/>
-				<Disqus.DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
-			</div>
+			<Helmet
+				title={frontmatter.title+' | '+data.site.siteMetadata.title}
+				meta={[
+				{ name: 'description', content: html.substring(0, 290).replace(/<[^>]*>/g, '')+'...' }
+				]}
+			/>
+			<h1 className="title">{frontmatter.title}</h1>
+			<p className="created">{frontmatter.date}</p>
+			<div
+				className="article-content"
+				dangerouslySetInnerHTML={{ __html: html }}
+			/>
+			<Disqus.DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
 		</Layout>
 	)
 }

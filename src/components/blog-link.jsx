@@ -1,29 +1,29 @@
 import React from "react";
 import Link from "gatsby-link";
+import { Divider, List } from 'semantic-ui-react'
 
 const BlogLink = ({ post }) => (
 
-	<div className="item">
+	<List.Item>
+		<List.Content>
+			<List.Header as="h2" className="title">
+				<Link to={post.frontmatter.path}>
+					{post.frontmatter.title}
+				</Link>
+			</List.Header>
+			<List.Description as="p" className="created">
+				{post.frontmatter.date}
+			</List.Description>
 
-		<h2 className="title">
-			<Link to={post.frontmatter.path}>
-				{post.frontmatter.title}
-			</Link>
-		</h2>
-
-		<p className="created">
-			 {post.frontmatter.date}
-		</p>
-
-		<p>{post.excerpt}</p>
-
-		<p className="readmore">
-			<Link to={post.frontmatter.path}>
-				Read more...
-			</Link>
-		</p>
-
-	</div>
+			<p className="excerpt">
+				{post.excerpt}
+				<Link className="excerpt_link" to={post.frontmatter.path}>
+					continue reading
+				</Link>
+			</p>
+			<Divider hidden />
+		</List.Content>
+	</List.Item>
 );
 
 export default BlogLink;
