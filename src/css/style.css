@@ -8,6 +8,16 @@ body {
 	background-repeat: repeat-x;
 	font-family: 'Droid Sans', sans-serif;
 	font-size: 1.2rem;
+	-webkit-font-smoothing: antialiased;
+}
+
+body.dark {
+	background-color: #444444;
+	color: #EEEEEE;
+}
+
+body.dark a {
+	color: #6BB6FF;
 }
 
 a.skip-main {
@@ -19,6 +29,7 @@ a.skip-main {
 	overflow:hidden;
 	z-index:-999;
 }
+
 a.skip-main:focus, a.skip-main:active {
 	color: #fff;
 	background-color:#000;
@@ -36,14 +47,22 @@ a.skip-main:focus, a.skip-main:active {
 	z-index:999;
 }
 
+.theme_toggle {
+	margin-top: -3rem;
+}
+
 .title {
 	font-family: 'Montserrat', sans-serif;
-	color: #3b8ddd;
+	color: #3B8DDD;
 	font-weight: normal;
 }
 
 .created {
 	font-style: italic;
+}
+
+body.dark .created {
+	color: #EEEEEE !important;
 }
 
 .excerpt {
@@ -70,6 +89,8 @@ pre {
 	white-space: -pre-wrap;
 	white-space: -o-pre-wrap;
 	word-wrap: break-word;
+	border: 0.25rem solid #CCCCCC;
+	padding: 1rem;
 }
 
 #right {
@@ -83,6 +104,9 @@ pre {
 }
 
 #footer a {
-	color: #333333;
 	text-decoration: underline;
+}
+
+body.dark #right, body.dark #footer, body.dark #footer a {
+	color: #DDDDDD;
 }
