@@ -1,9 +1,10 @@
 import React from 'react'
-import Link from 'gatsby-link'
 import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
+import Layout from '../components/layout'
+
 const ShiftPongPrivacyPage = () => (
-	<div>
+	<Layout>
 		<h1>ShiftPong Privacy Policy</h1>
 		<p>Christian Helvin built the ShiftPong app as a Free app. This SERVICE is provided by Christian Helvin at no cost and is intended for use as is.</p>
 		<p>This page is used to inform visitors regarding my policies with the collection, use, and disclosure of Personal Information if anyone decided to use my Service.</p>
@@ -40,7 +41,7 @@ const ShiftPongPrivacyPage = () => (
 		<p>I may update our Privacy Policy from time to time. Thus, you are advised to review this page periodically for any changes. I will notify you of any changes by posting the new Privacy Policy on this page. These changes are effective immediately after they are posted on this page.</p>
 		<p><strong>Contact Us</strong></p>
 		<p>If you have any questions or suggestions about my Privacy Policy, do not hesitate to <OutboundLink href="https://twitter.com/phpwarrior" target="_blank">contact</OutboundLink> me.</p>
-	</div>
+	</Layout>
 )
 
 export default ShiftPongPrivacyPage

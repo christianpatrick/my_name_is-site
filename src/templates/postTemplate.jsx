@@ -1,6 +1,9 @@
-import React from "react";
-import Helmet from 'react-helmet';
-import Disqus from 'disqus-react';
+import React from 'react'
+import { graphql } from 'gatsby'
+import Helmet from 'react-helmet'
+import Disqus from 'disqus-react'
+
+import Layout from '../components/layout'
 
 export default function Template({
 	data, // this prop will be injected by the GraphQL query below.
@@ -14,10 +17,10 @@ export default function Template({
 		url: data.site.siteMetadata.siteUrl+frontmatter.path,
 		identifier: frontmatter.path,
 		title: frontmatter.title
-	};
+	}
 
 	return (
-		<div className="article">
+		<Layout>
 			<Helmet
 				title={frontmatter.title+' | '+data.site.siteMetadata.title}
 				meta={[
@@ -31,8 +34,8 @@ export default function Template({
 				dangerouslySetInnerHTML={{ __html: html }}
 			/>
 			<Disqus.DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
-		</div>
-	);
+		</Layout>
+	)
 }
 
 export const pageQuery = graphql`
