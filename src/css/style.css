@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+@import url('https://fonts.googleapis.com/css?family=Droid+Sans:400,700');
+
+body {
+	background-color: #FFFFFF;
+	background-image: url('../media/bg.png');
+	background-position: center top;
+	background-repeat: repeat-x;
+	font-family: 'Droid Sans', sans-serif;
+	font-size: 1.2rem;
+	-webkit-font-smoothing: antialiased;
+}
+
+body.dark {
+	background-color: #444444;
+	color: #EEEEEE;
+}
+
+body.dark a {
+	color: #6BB6FF;
+}
+
+a.skip-main {
+	left:-999px;
+	position:absolute;
+	top:auto;
+	width:1px;
+	height:1px;
+	overflow:hidden;
+	z-index:-999;
+}
+
+a.skip-main:focus, a.skip-main:active {
+	color: #fff;
+	background-color:#000;
+	left: auto;
+	top: auto;
+	width: 30%;
+	height: auto;
+	overflow:auto;
+	margin: 10px 35%;
+	padding:5px;
+	border-radius: 15px;
+	border:4px solid yellow;
+	text-align:center;
+	font-size:1.2em;
+	z-index:999;
+}
+
+.theme_toggle {
+	margin-top: -3rem;
+}
+
+.title {
+	font-family: 'Montserrat', sans-serif;
+	color: #3B8DDD;
+	font-weight: normal;
+}
+
+.created {
+	font-style: italic;
+}
+
+body.dark .created {
+	color: #EEEEEE !important;
+}
+
+.excerpt {
+	line-height: 1.69;
+}
+
+.excerpt_link {
+	padding-left: 0.25rem;
+}
+
+#content img {
+	display: block;
+	height: auto;
+	max-width: 100%;
+}
+
+#content .well img {
+	padding: 1.0rem;
+}
+
+pre {
+	white-space: pre-wrap;
+	white-space: -moz-pre-wrap;
+	white-space: -pre-wrap;
+	white-space: -o-pre-wrap;
+	word-wrap: break-word;
+	border: 0.25rem solid #CCCCCC;
+	padding: 1rem;
+}
+
+#right {
+	color: #777777;
+}
+
+#footer {
+	color: #777777;
+	font-size: 1.0rem;
+	text-align: right;
+}
+
+#footer a {
+	text-decoration: underline;
+}
+
+body.dark #right, body.dark #footer, body.dark #footer a {
+	color: #DDDDDD;
+}

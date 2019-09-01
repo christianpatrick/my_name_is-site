@@ -21,7 +21,8 @@ module.exports = {
 							target: "_blank",
 							rel: "nofollow"
 						}
-					}
+					},
+					`gatsby-remark-prismjs`
 				],
 			},
 		},
@@ -64,6 +65,7 @@ module.exports = {
 					}
 				}`
 			}
-		}
+		},
+		'gatsby-plugin-dark-mode'
 	],
 }

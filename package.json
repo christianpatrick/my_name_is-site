@@ -4,19 +4,27 @@
   "version": "1.0.0",
   "author": "Christian Helvin <hi@mynameischristian.com>",
   "dependencies": {
-    "bootstrap": "^3.3.7",
     "disqus-react": "^1.0.5",
-    "gatsby": "^1.9.277",
-    "gatsby-link": "^1.6.46",
-    "gatsby-plugin-google-analytics": "^1.0.31",
-    "gatsby-plugin-react-helmet": "^2.0.11",
-    "gatsby-plugin-sitemap": "^1.2.25",
-    "gatsby-remark-copy-linked-files": "^1.5.37",
+    "gatsby": "^2.13.82",
+    "gatsby-link": "^2.2.9",
+    "gatsby-plugin-dark-mode": "^1.1.0",
+    "gatsby-plugin-google-analytics": "^2.1.11",
+    "gatsby-plugin-react-helmet": "^3.1.5",
+    "gatsby-plugin-sitemap": "^2.2.9",
+    "gatsby-remark-copy-linked-files": "^2.1.11",
     "gatsby-remark-external-links": "0.0.4",
-    "gatsby-source-filesystem": "^1.5.39",
-    "gatsby-transformer-remark": "^1.7.44",
+    "gatsby-remark-prismjs": "^3.3.11",
+    "gatsby-source-filesystem": "^2.1.18",
+    "gatsby-transformer-remark": "^2.6.19",
     "jquery": "^3.3.1",
-    "react-helmet": "^5.2.0"
+    "prismjs": "^1.17.1",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-github-btn": "^1.0.6",
+    "react-helmet": "^5.2.0",
+    "react-twitter-widgets": "^1.7.1",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^0.88.0"
   },
   "keywords": [
     "gatsby",
@@ -35,7 +43,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "gh-pages": "^1.2.0",
+    "gh-pages": "^2.1.1",
     "prettier": "^1.13.7"
   },
   "repository": {
