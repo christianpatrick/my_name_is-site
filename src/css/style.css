@@ -83,6 +83,11 @@ body.dark .created {
 	padding: 1.0rem;
 }
 
+.article-content hr {
+	width: 60%;
+	margin: 2.0rem auto;
+}
+
 pre {
 	white-space: pre-wrap;
 	white-space: -moz-pre-wrap;
@@ -95,6 +100,10 @@ pre {
 
 #right {
 	color: #777777;
+}
+
+#right h3 {
+	margin-top: -1rem;
 }
 
 #footer {
