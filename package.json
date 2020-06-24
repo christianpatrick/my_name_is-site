@@ -4,7 +4,6 @@
   "version": "1.0.0",
   "author": "Christian Helvin <hi@mynameischristian.com>",
   "dependencies": {
-    "disqus-react": "^1.0.5",
     "gatsby": "^2.13.82",
     "gatsby-link": "^2.2.9",
     "gatsby-plugin-dark-mode": "^1.1.0",
@@ -22,7 +21,7 @@
     "react-dom": "^16.9.0",
     "react-github-btn": "^1.0.6",
     "react-helmet": "^5.2.0",
-    "react-twitter-widgets": "^1.7.1",
+    "react-twitter-widgets": "^1.9.5",
     "semantic-ui-css": "^2.4.1",
     "semantic-ui-react": "^0.88.0"
   },

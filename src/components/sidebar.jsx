@@ -1,5 +1,6 @@
 import React from 'react'
 import { Image, Grid } from 'semantic-ui-react'
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
 import headshot from '../media/christianhelvin.jpg'
 import GitHubButton from 'react-github-btn'
@@ -9,8 +10,8 @@ const Sidebar = () => (
 	<aside id="right">
 		<Image src={headshot} alt="A smiling headshot of Christian Helvin" bordered fluid rounded />
 		<h2>Christian Helvin</h2>
-		<h3>Code and Music.</h3>
-		<p>Two things I love! Here's a place to store my random ideas, code collections, and things I've built.</p>
+		<h3>Full-Stack Nerd</h3>
+		<p>I'm a full-stack engineer at <OutboundLink href="https://www.breezechms.com/" target="_blank">Breeze</OutboundLink> and talk to myself throughout the day while throwing code on the screen. I'm passionate about encouraging a positive remote work culture, implementing good testing practices, and programming just for fun. In my free time, you'll find me trucking on American Truck Simulator and catching up on the latest nerdy podcasts. I lives with my wonderful wife and two dogs in Pensacola, Florida.</p>
 		<Grid textAlign="center">
 			<Grid.Row>
 				<Grid.Column>

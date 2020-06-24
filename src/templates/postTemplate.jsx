@@ -1,7 +1,6 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import Helmet from 'react-helmet'
-import Disqus from 'disqus-react'
 
 import Layout from '../components/layout'
 
@@ -10,14 +9,6 @@ export default function Template({
 }) {
 	const { markdownRemark } = data; // data.markdownRemark holds our post data
 	const { frontmatter, html } = markdownRemark;
-
-	//load comment module
-	const disqusShortname = 'christianpatrick';
-	const disqusConfig = {
-		url: data.site.siteMetadata.siteUrl+frontmatter.path,
-		identifier: frontmatter.path,
-		title: frontmatter.title
-	}
 
 	return (
 		<Layout>
@@ -33,7 +24,6 @@ export default function Template({
 				className="article-content"
 				dangerouslySetInnerHTML={{ __html: html }}
 			/>
-			<Disqus.DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
 		</Layout>
 	)
 }
